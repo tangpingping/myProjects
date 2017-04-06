@@ -1,0 +1,71 @@
+/*导航*/
+#nav .navbar-toggle .icon-bar {
+  	width: 4px;
+  	height: 4px;
+  	border-radius: 100%;
+}
+#nav .navbar-toggle {
+  	border: 0;
+  	
+}
+/*导航*/
+/*分享*/
+#share{
+	
+}
+#share .modal-dialog{
+	margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#share .modal-dialog .modal-content{
+	border-radius: 0;
+}
+#share .container{
+	text-align: center;
+}
+#share .container a{
+	display: block;
+	color: gray;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+}
+#share .container span{
+    font-size: 24px;
+}
+
+#share .container p{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+	#share{
+		display: none!important;
+	}
+}
+/*分享*/
+/*列表*/
+#walk_list{
+	margin-top: 56px;
+}
+.fr{
+	float: right;
+}
+#walk_list .header-line{
+	height: 45px;
+}
+#walk_list .header-line .text-left{
+	margin-left: -15px ;
+}
+#walk_list .pager{
+	margin: 0;
+}
+#walk_list .pager a{    
+	padding: 0px 3px;
+    border-radius: 100%;
+}
+
+/*列表*/

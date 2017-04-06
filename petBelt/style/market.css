@@ -1,0 +1,38 @@
+.search{
+    position: absolute;
+    top:0.15rem;
+    left: 0;
+    /*height: 20px;*/
+    /*overflow: hidden;*/
+    z-index: 5;
+}
+.title_bg{
+    height: 0.7rem;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#272727), to(transparent));
+    position: absolute;
+    top:0;
+    z-index: 99;
+
+}
+.ui-loader{
+    display: none;
+}
+.ui-input-text{
+    border: none;
+    margin: 0;
+}
+.input-group-addon{
+    /*padding-top: 0;*/
+    border:0;
+    line-height: 0;
+}
+.ui-page-theme-a a{
+    color: #502500;
+}
+.ui-page-theme-a a:hover{
+    color: #502500;
+    text-decoration: none;
+}
+.ui-content span{
+    /*margin: 10px;*/
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+		<link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../style/pet_map.css"/>
+		<title>地图</title>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZZ3C8A6irhW7b3WwQSN7smNeW5EVVtqK"></script>
+	</head>
+	<body>
+		<!--导航-->
+		<div id="nav_top">
+			<nav class="nav navbar-default navbar-header navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-3 text-center">
+						<button class="btn btn-default"> <span class="glyphicon glyphicon-chevron-left"></span></button>
+						</div>
+						<div class="col-xs-6">
+							<h5 class="text-center">老爷的跟踪定位</h5>
+						</div>
+						<div class="col-xs-3">
+								<div class="dropdown text-center">
+										  <button id="dLabel"  class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											明细
+										  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dLabel">
+										    <li >历史轨迹</li>
+										  </ul>
+								</div>
+						</div>
+						
+					</div>
+				</div>
+			</nav>  
+		</div>
+		<!--导航-->
+		<!--百度地图容器-->
+			    <div id="allmap"></div>
+		<!--百度地图容器-->		
+		
+		
+		<!--底部菜单-->
+		<nav class="nav navbar navbar-default navbar-fixed-bottom" id="nav_footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3 text-center" >
+						<a href="#" class="btn" id="pet_history"><span class="glyphicon glyphicon-time"></span><br />
+							历史轨迹</a>
+					</div>
+					<div class="col-xs-3 text-center">
+						<a href="#" class="btn"><span class="glyphicon glyphicon-chevron-left"></span><br />
+							前一天</a>
+					</div>
+					<div class="col-xs-3 text-center ">
+						<a href="#" class="btn"><span class="glyphicon glyphicon-chevron-right"></span><br />
+							后一天</a>
+					</div>
+					<div class="col-xs-3 text-center" id="pet_position">
+						<a href="#" class="btn" ><span class="glyphicon glyphicon-map-marker"></span><br />
+							轨迹毛用</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--底部菜单-->
+		<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+		<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+		<script src="../js/map_script.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>

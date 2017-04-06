@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+		<link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../style/pet_run.css"/>
+		<title>宠物运动</title>
+	</head>
+	<body>
+		
+		
+		<nav class="nav">
+			<div class="container">
+			<!--计步-->	
+				<div class="row" id="step_num">
+					<div class="col-xs-6" >
+						<h4>2690<span>步</span></h4>
+					</div>
+					<div class="col-xs-6 text-right infor_btn" >
+						<a href="#" >数据同步</a>
+					</div>
+					<div class="col-xs-12">
+						<span class="time_step">2017.03.28 16:09更新</span>
+					</div>
+					
+					<div class="col-xs-12">
+						<span class="">数据来源</span> &nbsp;<span class="">狗带</span>
+					</div>
+					
+					<div class="col-xs-3">
+						<span class="">距离</span><br /><span class="">3公里</span>
+					</div>
+					<div class="col-xs-3">
+						<span class="">时长</span><br /><span class="">0.5小时</span>
+					</div>
+					<div class="col-xs-4">
+						<span class="">热量</span><br /><span class="">150千卡</span>
+					</div>
+					<div class="col-xs-2">
+					</div>
+				</div>
+				<br />
+				<!--表格统计-->
+				<div class="row" id="infor_table">
+					<div class="col-xs-12">
+						<div class="panel panel-default">
+			                <div class="panel-heading">宠物运动统计</div>
+			                <div class="panel-body">
+			                    <canvas id="canvas" class="col-md-12"></canvas>
+			                </div>
+			            </div>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+		<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+		<script src="../js/Chart.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/script.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

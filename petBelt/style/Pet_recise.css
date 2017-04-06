@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+body{
+    background-color: #f8f8ff;
+}
+#Pet_revise h1{
+    color: #66c7f7;
+    padding-bottom: 20px;
+}
+#Pet_revise .z{
+    float: left;
+}
+#Pet_revise .fot_btn{
+    margin-top: 20px;
+    margin-left: 46px;
+}
+#Pet_revise .form-horizontal .control-label {
+    padding-top: 0px;
+}
+#Pet_revise .mbot{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,23 @@
+.container{
+    padding: 0;
+}
+.classfiy_right{
+    overflow: hidden;
+    padding-top: 50px;
+    text-align: center;
+}
+.mar_top_15{
+    margin-top: 30px;
+    padding-right: 10px;
+}
+.pad_right_10{
+    padding-right: 10px;
+}
+.list-group-item.active{
+   background-color: #f2f2f2;
+    border-color: transparent;
+}
+.classfiy_left{
+    padding: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>宠物列表</title>
+	<link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../style/petlist.css">
+    <link rel="stylesheet" href="../style/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/pet_list_footBtn.css"/>
+</head>
+<body>
+<div id="petList">
+	<div class="obscure">
+	    <div class="container">
+	        <h1>我的宠物</h1>
+	    </div>
+	    <div class="container">
+	        <table class="table center table-hover">
+	            <thead>
+	                <tr>
+	                    <th>靓照</th>
+	                    <th>名字</th>
+	                    <th>品种</th>
+	                    <th>种类</th>
+	                    <th>操作</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	            <tr>
+	                <td scope="row"><img src="../img/1.jpg" class="img-responsive img-circle"></td>
+	                <td>狼</td>
+	                <td>小狗</td>
+	                <td>阿拉斯加</td>
+	                <td>
+	                    <li role="presentation" class="dropdown">
+	                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	                            操作<span class="caret"></span>
+	                        </a>
+	                        <ul class="dropdown-menu">
+	                            <li><a href="Pet_revise.html">编辑信息</a></li>
+	                            <li><a href="#">绑定</a></li>
+	                            <li><a href="#">申请解绑</a></li>
+	                            <li><a href="#">删除</a></li>
+	                        </ul>
+	                    </li>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td scope="row"><img src="../img/2.jpg" class="img-responsive img-circle"></td>
+	                <td>狼</td>
+	                <td>小狗</td>
+	                <td>阿拉斯加</td>
+	                <td> <li role="presentation" class="dropdown">
+	                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	                        操作<span class="caret"></span>
+	                    </a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="#">编辑信息</a></li>
+	                        <li><a href="#">绑定</a></li>
+	                        <li><a href="#">删除</a></li>
+	                        <li><a href="#">申请解绑</a></li>
+	                    </ul>
+	
+	                </li></td>
+	            </tr>
+	            <tr>
+	                <td scope="row"><img src="../img/2.jpg" class="img-responsive img-circle"></td>
+	                <td>狼</td>
+	                <td>小狗</td>
+	                <td>阿拉斯加</td>
+	                <td> <li role="presentation" class="dropdown">
+	                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	                        操作<span class="caret"></span>
+	                    </a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="#">编辑信息</a></li>
+	                        <li><a href="#">绑定</a></li>
+	                        <li><a href="#">申请解绑</a></li>
+	                        <li><a href="#">删除</a></li>
+	                    </ul>
+	                </li></td>
+	            </tr>
+	            <tr>
+	                <td scope="row"><img src="../img/2.jpg" class="img-responsive img-circle"></td>
+	                <td>狼</td>
+	                <td>小狗</td>
+	                <td>阿拉斯加</td>
+	                <td> <li role="presentation" class="dropdown">
+	                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	                        操作<span class="caret"></span>
+	                    </a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="#">编辑信息</a></li>
+	                        <li><a href="#">绑定</a></li>
+	                        <li><a href="#">申请解绑</a></li>
+	                        <li><a href="#">删除</a></li>
+	                    </ul>
+	                </li></td>
+	            </tr>
+	            <tr>
+	                <td scope="row"><img src="../img/2.jpg" class="img-responsive img-circle"></td>
+	                <td>狼</td>
+	                <td>小狗</td>
+	                <td>阿拉斯加</td>
+	                <td>
+	                    <li role="presentation" class="dropdown">
+	                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+	                            操作<span class="caret"></span>
+	                        </a>
+	                        <ul class="dropdown-menu">
+	                            <li><a href="#">编辑信息</a></li>
+	                            <li><a href="#">绑定</a></li>
+	                            <li><a href="#">申请解绑</a></li>
+	                            <li><a href="#">删除</a></li>
+	                        </ul>
+	                    </li>
+	                </td>
+	            </tr>
+	            </tbody>
+	        </table>
+	    </div>
+	    <div class="container fcolor">
+	        <!--<button class="btn btn-default btn-lg"><a href="" data-toggle="modal" data-target="#userAdd">添加新宠</a></button>
+	        <button class="btn btn-default btn-lg"><a href="" data-toggle="modal" data-target="#pet_Canon">宠物宝典</a></button>
+	        <button class="btn btn-default btn-lg"><a href="pet_photo.html">宠物酷照</a></button>
+	        <button class="btn btn-default btn-lg"><a href="" data-toggle="modal" data-target="#contactUs">联系客服</a></button>-->
+	        <button class="button button-glow button-border button-rounded button-primary"><a href="#" data-toggle="modal" data-target="#userAdd" >添加新宠</a></button>
+	        <button class="button button-glow button-border button-rounded button-primary"><a href="#" data-toggle="modal" data-target="#pet_Canon">宠物宝典</a></button>
+	        <button class="button button-glow button-border button-rounded button-primary"><a href="pet_photo.html" >宠物酷照</a></button>
+	        <button class="button button-glow button-border button-rounded button-primary"><a href="#" data-toggle="modal" data-target="#contactUs">联系客服</a></button>
+	    </div>
+	    <!-- 添加宠物 -->
+	    <div class="modal fade" id="userAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                    <h4 class="modal-title">新的爱宠</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <form class="form-horizontal">
+	                        <div class="form-group">
+	                            <label class="col-xs-4 control-label">爱宠名字：</label>
+	                            <div class="col-xs-6">
+	                                <input class="form-control"  placeholder="请输入爱宠名字">
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-xs-4 control-label">爱宠年龄：</label>
+	                            <div class="col-xs-2 ">
+	                                <select name="old">
+	                                    <option>1岁</option>
+	                                    <option>2岁</option>
+	                                    <option>3岁</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-xs-4 control-label">爱宠性别：</label>
+	                            <div class="col-xs-5">
+	                                <label>
+	                                    <input type="radio" name="sex">弟弟
+	                                    <input type="radio" name="sex">妹妹
+	                                </label>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-xs-4 control-label">爱宠种族：</label>
+	                            <div class="col-xs-5">
+	                                <select name="old">
+	                                    <option>猫</option>
+	                                    <option>狗</option>
+	                                    <option>猪</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-xs-4 control-label">爱宠品种：</label>
+	                            <div class="col-xs-5">
+	                                <select name="old">
+	                                    <option>哈士奇</option>
+	                                    <option>波斯猫</option>
+	                                    <option>仓鼠</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-xs-4 control-label">健康状态：</label>
+	                            <div class="col-xs-6">
+	                                <label>
+	                                    <input type="radio" name="sex">健康
+	                                    <input type="radio" name="sex">亚健康
+	                                </label>
+	                            </div>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="col-xs-4 control-label">爱宠介绍：</label>
+	                            <textarea class="form-control" placeholder="请简单描述您的爱宠特征" rows="4"></textarea>
+	                        </div>
+	                    </form>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	                    <button type="button" class="btn btn-primary">添加</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!--联系我们-->
+	    <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                    <h4 class="modal-title"></h4>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="container">
+	                        <div class="row">
+	                            <div class="col-md-6  wow fadeInLeft">
+	                                <h4>
+	                                    <span class="glyphicon glyphicon-send"></span>
+	                                    &nbsp;
+	                                 	联系丑拒
+	                                </h4>
+	                                <address>
+	                                    <p>
+	                                        <span class="glyphicon glyphicon-home"></span>
+	                                        &nbsp;
+	                                        地址:成都市高新区天府软件园D5-11
+	                                    </p>
+	                                    <p>
+	                                        <span class="glyphicon glyphicon-phone-alt"></span>
+	                                        &nbsp;
+	                                        联系电话：028-86567913
+	                                    </p>
+	                                    <p>
+	                                        <span class="glyphicon glyphicon-phone-alt"></span>
+	                                        &nbsp;
+	                                        联系QQ：111111
+	                                    </p>
+	                                    <p>
+	                                        <span class="glyphicon glyphicon-phone-alt"></span>
+	                                        &nbsp;
+	                                        微信：4214124
+	                                    </p>
+	                                    <p>
+	                                        <span class="glyphicon glyphicon-envelope"></span>
+	                                        &nbsp;
+	                                        邮箱:hr@maiziedu.com
+	                                    </p>
+	                                </address>
+	                            </div>
+	                        </div>
+	                	</div>
+		                <div class="modal-footer">
+		                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		                </div>
+	            	</div>
+	        	</div>
+	    	</div>
+		</div>
+		<!--宠物宝典-->
+	    <div class="modal fade" id="pet_Canon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">宠物宝典</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>文章标题</th>
+                            <th>作者</th>
+                            <th>发布时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">狗狗痉挛的原因及处理</th>
+                            <td>海贼王</td>
+                            <td>2015/08/08</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        操作<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">全局置顶</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">狗狗航空箱的选购要点</th>
+                            <td>火影忍者</td>
+                            <td>2015/08/08</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        操作<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">全局置顶</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">如何正确给爱宠洗澡</th>
+                            <td>犬夜叉</td>
+                            <td>2015/08/08</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        操作<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">全局置顶</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">怎么训练小狗？</th>
+                            <td>足球小子</td>
+                            <td>2015/08/08</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        操作<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">全局置顶</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">怎么选购狗粮？</th>
+                            <td>熊大</td>
+                            <td>2015/08/08</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        操作<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">全局置顶</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">宠物每顿吃多少？</th>
+                            <td>熊二</td>
+                            <td>2015/08/08</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        操作<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">全局置顶</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">怎么判断狗狗是否已经吃饱了？</th>
+                            <td>熊三</td>
+                            <td>2015/08/08</td>
+                            <td>
+                                <div role="presentation" class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        操作<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">全局置顶</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">发帖</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+</div>
+</body>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</html>+

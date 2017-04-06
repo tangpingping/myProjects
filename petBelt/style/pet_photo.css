@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+body{
+    background-color: #f8f8ff;
+}
+#pet_photo h1{
+    margin-bottom: 50px;
+    color: #4de81c;
+    text-align: center;
+}
+#pet_photo .fot_btn{
+    margin-top: 20px;
+    text-align: center;
+}
+#pet_photo .fot_btn a{
+	margin-right: 20px;
+}

@@ -1,0 +1,40 @@
+.aph_market{
+    width: 100%;
+    background-color: rgba(236, 192, 150, 0.9);
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    padding-top: 20px;
+
+}
+.input-group input,.input-group span{
+    background-color: rgba(255,255,255,0.4);
+    height: 0.6rem;
+    /*border-radius: 10%;*/
+}
+
+.aph_white_light img{
+    width: 0.5rem;
+    height: 0.5rem;
+    /*margin: 10px;*/
+    margin: auto;
+    margin-bottom: 8px;
+}
+.mar_0{
+    /*margin-left: 0;*/
+    /*margin-right: 0;*/
+}
+.list img{
+    width: 5em;
+    height: 5em;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    border: solid 1px #cccccc;
+    box-shadow: 1px 1px 10px #411f00;
+}
+.fix_top{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+}

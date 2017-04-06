@@ -1,0 +1,13 @@
+input,select{
+    border: none;
+    margin-top: 0.1rem;
+    outline: none;
+    width: 100%;
+}
+select{
+    /*margin-left: 2rem;*/
+    /*margin-bottom: 0.1rem;*/
+}
+hr{
+    margin-top: 2px;
+}

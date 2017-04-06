@@ -1,0 +1,26 @@
+#step_num h4{
+	color: skyblue;
+	font-size: 30px;
+}
+#step_num h4 span{
+	color: black;
+	font-size: 10px;
+}
+.time_step{
+	color: gainsboro;
+}
+.infor_btn a{
+	display: inline-block;
+	height: 30px;
+	line-height:10px ;
+	margin: 10px;
+	padding:10px ;
+	border: 1px solid skyblue;
+}
+.infor_btn a:link{
+	text-decoration: none;
+	background: skyblue;
+}
+#step_num div{
+	margin-bottom: 10px;
+}

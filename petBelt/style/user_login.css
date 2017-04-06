@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+body{
+	 background-color: #f8f8ff;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    overflow: auto;
+    color: black;
+}
+#user_longin h1{
+    color: #66c7f7;
+}
+/*#user_longin{*/
+    /*position: absolute;*/
+    /*top:20%;*/
+/*}*/
+#user_longin .ptop{
+    padding-top: 10px;
+}
+#user_longin .center{
+    text-align: center;
+}
+#user_longin .mtop{
+    margin-top: 20px;
+}
+#user_longin .col-xs-5{
+    font-size: small;
+}
+#user_longin .btna a{
+    color: #333333;
+    text-decoration: none
+}
+#user_longin .form-control-feedback{
+right: 15px;
+}
+#user_longin .footimg img{
+	margin: 0px auto
+}

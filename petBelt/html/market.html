@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>宠物商城</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/jquery.mobile-1.4.5.min.css">
+
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/personalInfo.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--宝贝详情css-->
+    <link rel="stylesheet" href="../style/purchaseInfo.css">
+    <link rel="stylesheet" href="../style/commom.css">
+    <link rel="stylesheet" href="../style/petMarket.css">
+    <link rel="stylesheet" href="../style/market.css">
+
+</head>
+<body>
+<!--宝贝详情页面-->
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="pic_play">
+                        <span id="pics">
+                            <a href="#"><img src="../img/a6.jpg" ></a>
+                            <a href="#"><img src="../img/a5.jpg" ></a>
+                            <a href="#"><img src="../img/a4.jpg" ></a>
+                            <a href="#"><img src="../img/a3.jpg" ></a>
+                            <a href="#"><img src="../img/a4.jpg" ></a>
+                        </span>
+                        <!--<span class="left_btn"><</span>-->
+                        <!--<span class="right_btn">></span>-->
+                        <span class="bottom_btn">
+                            <div></div><div></div><div></div><div></div>
+                            <div class="bottom_btn_last"></div>
+                        </span>
+                    </div>
+                    <div class="col-xs-12 title_bg">
+                        <div class="col-xs-10 col-xs-offset-1 search">
+                            <!--<div class="title_bg">-->
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="搜索" aria-describedby="basic-addon1">
+                                <span class="input-group-addon" id="basic-addon1">
+                            <a class="glyphicon glyphicon-search" href="#" style="color:#0f0f0f;"></a>
+                            </span>
+                            </div>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div data-role="main" class="ui-content">
+        <div class="container">
+            <div class="row mar_top_8">
+                <div class="col-xs-12 mar_top_8">
+                    <p class="word" >&nbsp;&nbsp;分 类</p>
+                </div>
+            </div>
+            <div class="row aph_white_light mar_top_8">
+                <div class="col-xs-3 ">
+                    <a href="#"><img src="../img/pet_01.jpg" class="img-circle img-responsive">
+                        <p class="word">橘猫</p></a>
+                </div>
+                <div class="col-xs-3 ">
+                    <a href="#"><img src="../img/pet_02.jpg" class="img-circle img-responsive">
+                        <p class="word">狗粮</p></a>
+                </div>
+                <div class="col-xs-3 ">
+                    <a href="#"><img src="../img/pet_03.jpg" class="img-circle img-responsive">
+                        <p class="word">猫粮</p></a>
+                </div>
+                <div class="col-xs-3 ">
+                    <a href="#"><img src="../img/pet_04.jpg" class="img-circle img-responsive">
+                        <p class="word">荷兰猪</p></a>
+                </div>
+                <!---->
+                <div class="col-xs-3 ">
+                    <a href="#"><img src="../img/dog.jpg" class="img-circle img-responsive">
+                        <p class="word">狗</p></a>
+                </div>
+                <div class="col-xs-3 ">
+                    <a href="#"><img src="../img/eat.jpg" class="img-circle img-responsive">
+                        <p class="word">零食</p></a>
+                </div>
+                <div class="col-xs-3 ">
+                    <a href="#"><img src="../img/dog01.jpg" class="img-circle img-responsive">
+                        <p class="word">博美</p></a>
+                </div>
+                <div class="col-xs-3 ">
+                    <a href="classfiy.html" data-ajax="false"><img src="../img/house.jpg" class="img-circle img-responsive">
+                        <p class="word">更多</p></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 mar_top_8">
+                    <p class="word" >&nbsp;&nbsp;为 你 推 荐</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" row list aph_white_light word ">
+                    <div class="col-xs-4 ">
+                        <a href="purchaseInfo.html" data-ajax="false"><div><img src="../img/01.jpg" class="img-rounded img-responsive"></div>
+                            <p>雪橇犬幼犬幼犬</p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#"><div><img src="../img/02.jpg" class="img-rounded img-responsive"></div>
+                            <p >幼犬</p></a>
+                        <span style="color: darkred;">￥16.80元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4 ">
+                        <a href="#"> <div><img src="../img/dog.jpg" class="img-rounded img-responsive"></div>
+                            <p >幼犬赛级 </p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" row list aph_white_light word ">
+                    <div class="col-xs-4">
+                        <a href="#"><div><img src="../img/03.jpg" class="img-rounded img-responsive"></div>
+                            <p>盲犬狗狗</p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#"><div><img src="../img/04.jpg" class="img-rounded img-responsive"></div>
+                            <p>活体宠物狗狗</p></a>
+                        <span style="color: darkred;">￥16.80元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#"> <div><img src="../img/05.jpg" class="img-rounded img-responsive"></div>
+                            <p>茶杯犬</p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" row list aph_white_light word ">
+
+                    <div class="col-xs-4">
+                        <a href="#"><div><img src="../img/06.jpg" class="img-rounded img-responsive"></div>
+                            <p >金毛幼犬小</p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#"><div><img src="../img/07.jpg" class="img-rounded img-responsive"></div>
+                            <p>纯种球</p></a>
+                        <span style="color: darkred;">￥16.80元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#"> <div><img src="../img/08.jpg" class="img-rounded img-responsive"></div>
+                            <p>出售茶杯犬</p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class=" row list aph_white_light word ">
+                    <div class="col-xs-4">
+                        <a href="#"><div><img src="../img/09.jpg" class="img-rounded img-responsive"></div>
+                            <p>磨牙棒狗</p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#"><div><img src="../img/01.jpg" class="img-rounded img-responsive"></div>
+                            <p>纯种球体</p></a>
+                        <span style="color: darkred;">￥16.80元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#"> <div><img src="../img/02.jpg" class="img-rounded img-responsive"></div>
+                            <p>博美犬</p></a>
+                        <span style="color: darkred;">￥120元 <small style="color: #c12e2a;">包邮</small></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="">
+        <footer style="margin-top: 50px;">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-xs-12 buy_content word mar_top_8" >
+                        <p>CopyRight AllRervison@出版</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.mobile-1.4.5.min.js"></script>
+<script src="../js/market.js"></script>
+<script src="../js/marketInfo.js"></script>
+<script src="../js/personalInfo.js"></script>
+<!--<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Microsoft YaHei",sans-serif;
+}
+.aph_bg{
+    background-attachment: fixed;
+    background: url(../img/bg_pet.jpg) repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #763200;
+    background-attachment: fixed;
+    /*overflow-x:hidden;*/
+
+}
+.aph{
+    width: 100%;
+    background-color: rgba(246, 232, 231, 0.9);
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    /*z-index: 0;*/
+    /*padding-top: 80px;*/
+    color: #763200;
+
+}
+
+a{
+    color: #763200;
+}
+/*a:hover{*/
+    /*color: #f60;*/
+    /*text-decoration: none;*/
+/*}*/
+.head img{
+    width: 80px;
+    height: 100px;
+    margin: auto;
+
+}
+.content{
+    position: absolute;
+    top:4rem;
+    /*left: 3rem;*/
+}
+/*.hei{*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+/*}*/
+.fix_hei{
+    height: 20px;
+}
+.aph_red{
+    background-color: rgba(255, 101, 67, 0.2);
+    /*text-align: center;*/
+}
+.buy{
+    margin-top: 8px;
+    padding-top: 8px;
+    /*overflow: hidden;*/
+}
+.buy img{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.buy_style{
+    color: #ba5d51;
+    font-size: 0.4rem;
+    font-weight:100;
+}
+.buy_style_dark{
+    color: #a3524a;
+    font-size: 0.4rem;
+    font-weight:100;
+}
+.buy_content{
+    text-align: center;
+}
+.word{
+    font-size: 0.23rem;
+}
+.mar_top_8{
+    margin-top: 8px;
+}
+.pad_top_10{
+    padding-top: 15px;
+}
+.pad_top_8{
+    padding-top: 8px;
+}
+.aph_white_light{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 15px 0 8px 0;
+    overflow: hidden;
+}
+.title{
+    position: relative;
+    z-index: 0;
+    top:0;
+    left: 0;
+    /*width: 100%;*/
+    /*height: 50%;*/
+}
+.title img{
+    -webkit-filter:blur(1px);
+    -webkit-transform:scale(1);
+}
+.container{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+.col-xs-12{
+    padding: 0;
+}

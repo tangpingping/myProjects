@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+		<link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../style/pet_msg.css"/>
+		<title>宠物信息</title>
+	</head>
+	<body>
+		
+		<!--头像导航-->
+		   <nav class=" navbar navbar-default" id="head_portrait">
+			   	<div class="overlayer">
+			   	<div class="container">
+				   	<div class="row">
+
+					   		<!--背景-->
+					   		<div class="nav" id="bg_head">
+					   			<img src="../img/head.jpg" class="img-responsive"/>
+
+					   		</div>
+					   		<!--背景-->
+					   		<div class="col-xs-12 ">
+
+						   		<div class="navbar-header navbar-brand ">
+						   			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+	
+						   		</div>
+					   		
+					  		</div>
+							
+					   	</div>
+					   	<!--头像-->
+					   	<div class="head_pic">
+					   			<img src="../img/head.jpg" class="img-responsive"/>
+							<a href="#"><span class="glyphicon glyphicon-pencil">咕噜米</span>
+							</a>
+					   	</div>
+					   	<!--头像-->
+					   	<!--导航条-->
+					   	<div class="row">
+					   		<div class="col-xs-12">
+					   			<ul class="nav nav-tabs  navbar-default" id="nav_head">
+						   				<li ><a href="#" >基本信息</a></li>
+
+						   				<li><a href="#" >照片</a></li>
+
+						   				<li><a href="#" >运动量</a></li>
+
+					   			
+					   			</ul>
+					   							   				
+					   		</div>	
+					   	</div>	
+						<!--导航条-->
+					   	
+			   		</div>
+			   	</div>
+		   </nav>
+				<!--头像导航-->
+		<!--内容-->
+		   <div class="container"id="context">
+		   	   <div class="row">
+		   	   	  <div class="col-xs-12">
+		   	   	  	<table class="table">
+		   	   	  		<tr>
+		   	   	  			<th>
+		   	   	  				<div class="dropdown">
+		   	   	  					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   	   	  					宠物信息
+		   	   	  					<span class="caret"></span>
+		   	   	  					</button>
+
+		   	   	  				<ul class="dropdown-menu" id="race">
+		   	   	  					<li><a href="#">猫</a></li>
+		   	   	  					<li><a href="#">狗</a></li>
+		   	   	  					
+		   	   	  				</ul>
+		   	   	  				</div>
+		   	   	  			</th>
+		   	   	  			<th class="text-right" id="race_show" contenteditable="true">狗</th>
+		   	   	  		</tr>
+		   	   	  		
+		   	   	  		<tr>
+		   	   	  			<th>
+		   	   	  				<div class="dropdown">
+		   	   	  					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   	   	  					品种
+		   	   	  					<span class="caret"></span>
+		   	   	  					</button>
+
+		   	   	  				<ul class="dropdown-menu" id="lineage">
+		   	   	  					<li><a href="#">哈士奇</a></li>
+		   	   	  					<li><a href="#">金毛猎犬</a></li>
+		   	   	  					<li><a href="#">边牧牧羊犬</a></li>
+		   	   	  					<li><a href="#">拉布拉多</a></li>
+		   	   	  					
+		   	   	  				</ul>
+		   	   	  				</div>
+		   	   	  			</th>
+		   	   	  			<th class="text-right" id="lineage_text" contenteditable="true">拉布拉多</th>
+		   	   	  		</tr>
+		   	   	  	
+		   	   	  		<tr>
+		   	   	  			<th>
+		   	   	  				性别
+		   	   	  			</th>
+		   	   	  			<th class="text-right">
+		   	   	  				<label > <input  type="radio" name="sex"/>弟弟</label>
+		   	   	  				<label > <input type="radio" name="sex"/>妹妹</label>
+		   	   	  			</th>
+		   	   	  		</tr>
+		   	   	  		<tr>
+		   	   	  			<th>体重</th>
+		   	   	  			<th class="text-right" contenteditable="true">30kg</th>
+		   	   	  		</tr>
+		   	   	  	</table>
+		   	   	  </div>
+		   	   </div>
+		   </div>
+		<!--内容-->
+
+
+		<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+		<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+		<script src="../js/pet_mag.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

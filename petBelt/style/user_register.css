@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+body{
+    background-color: #f8f8ff;
+}
+#user_register h1,h2,h3{
+    color: #66c7f7;
+}
+#user_register .mbottom{
+    margin-bottom: 10px;
+}
+#user_register .mtop{
+    margin-top: 15px;
+}

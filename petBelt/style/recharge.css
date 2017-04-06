@@ -1,0 +1,28 @@
+.head_pic{
+    background: url("../img/dogs.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+}
+.col-xs-12{
+    padding: 0;
+}
+.aph_white{
+    background-color: rgba(4, 100, 255, 0.5);
+    /*padding: 30px 50px 30px 50px;*/
+    padding: 40px 25px;
+    width: 100%;
+}
+.aph_white span{
+    font-size: 40px;
+    color: white;
+}
+.list-group{
+    margin-top: 10px;
+}
+.list-group-item-info,.list-group-item-success{
+    padding: 10px;
+    list-style: none;
+}
+.list-group-item-info .caret,.list-group-item-success .caret{
+    margin-top: 8px;
+}

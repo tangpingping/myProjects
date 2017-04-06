@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: small;
+    text-align: center;
+}
+body{
+    background-attachment: fixed;
+    background: url(../img/bg_pet.jpg) repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    overflow: auto;
+}
+.obscure{
+	width: 100%;
+    background-color: rgba(246, 232, 231, 0.8);
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    padding-top: 80px;
+}
+#petList h1{
+    color: #273f48;
+    margin-bottom: 35px;
+    margin-top: -28px;
+    font-weight: bold;
+}
+#petList .table-hover>tbody>tr:hover {
+    background-color: rgba(246, 232, 231, 0.5);
+    color: #ce6139;
+}
+#petList .center{
+    text-align: center;
+}
+#petList .table>tbody>tr>td,.table>thead>tr>th{
+    vertical-align: middle;
+    text-align: center;
+}
+#petList .dropdown-menu{
+    min-width: 0px;
+    margin-left: -5px;
+}
+#petList .table{
+    color: #763200;
+}
+#petList .table>tbody>tr>td>li{
+    list-style: none;
+}
+#petList .table>tbody>tr>td>li a{
+    color: #763200;
+    text-decoration: none;
+}
+#petList .container button{
+    margin-right: 5px;
+    padding: 5px 2px;
+}
+#petList .button-rounded{
+	border-radius: 9px;
+}
+#petList .button-border{
+	line-height: 26px;
+}
+#contactUs .modal-content .modal-body p,h4{
+	text-align: left;
+}
+#userAdd *{
+	text-align: left;
+}
+#petList .fcolor a{
+	font-weight: 600;
+    color: #b45a34;
+}
+#userAdd,#contactUs{
+	color: black;
+}
+#pet_Canon .table{
+	color: black;
+}

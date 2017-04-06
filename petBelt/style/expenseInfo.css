@@ -1,0 +1,22 @@
+.word_img{
+    font-size: 0.5rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.1rem;
+}
+.col-xs-12{
+    padding: 0;
+}
+.glyphicon{
+    color: #81c4e2;
+    font-size: 0.3rem;
+}
+.title_bg{
+    /*position: relative;*/
+    /*z-index: 99;*/
+    /*background: url("../img/dogs.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+    width: 100%;
+    height: auto;
+    -webkit-filter:blur(4px);
+    -webkit-transform:scale(1);
+
+}

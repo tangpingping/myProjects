@@ -1,0 +1,60 @@
+.navbar-brand span{
+    margin-top: 0.1rem;
+}
+.dropdown{
+    margin-left: 0.01rem;
+    margin-top: 0.16rem;
+}
+.btn{
+    height: 0.6rem;
+    width: 1.6rem;
+}
+.dropdown-menu{
+    left: -0.8rem;
+}
+
+.time_aph{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+.row_mar_top{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+.content{
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 8px rgba(3, 3, 2, 0.6);
+    overflow: hidden;
+   text-align: center;
+
+}
+.content_bottom{
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 8px rgba(3, 3, 2, 0.6);
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    text-align: center;
+
+}
+.mar_top_8 span, .mar_top_8 small ,.mar_top_8 strong{
+    padding: 0.2rem;
+}
+img{
+    margin: auto;
+}
+.word{
+    font-size: 0.23rem;
+}
+.mar_top_8{
+    margin-top: 8px;
+}
+.pad_top_10{
+    padding-top: 15px;
+}
+.pad_top_8{
+    padding-top: 8px;
+}
