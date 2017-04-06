@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>麦子后台管理</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/animate.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Maizi Admin</a>
+        </div>
+        <div class="collapse navbar-collapse ">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" ><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+                <li><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+                <li  class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
+                <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;前台首页</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;个人主页</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;个人设置</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;账户中心</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;我的收藏</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="#">admin&nbsp;&nbsp;<span class="caret"></span></a></li>-->
+                <li><a href="#">退出&nbsp;&nbsp;<span class="glyphicon glyphicon-off"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="content.html" class="list-group-item ">管理文章</a>
+                <a href="addContent.html" class="list-group-item active">添加文章</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="page-header">
+                <h1>发布文章</h1>
+            </div>
+            <ul class="nav nav-tabs">
+                <li>
+                    <a href="content.html">文章管理</a>
+                </li>
+                <li   class="active"><a href="addContent.html">添加文章</a></li>
+                <!--<li><a href="#" role="button" data-toggle="modal" data-target="#myModal">添加用户</a></li>-->
+            </ul>
+            <form action="#" method="post" class="mar_t15">
+                <div class="form-group">
+                    <label for="title">标题</label>
+                    <input type="text" id="title" placeholder="输入文章标题" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="content">正文</label>
+                    <textarea id="content" placeholder="请输文章正文内容" class="form-control" rows="20"></textarea>
+                </div>
+                <input type="checkbox">&nbsp;&nbsp;&nbsp;全局置顶
+                <button type="button" class="btn btn-default pull-right">发布文章</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+<!--&lt;!&ndash;底部&ndash;&gt;-->
+<!--<footer>-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-12">-->
+                <!--<p>CopyRight：@ 2012-2015 www.maiziedu.com 蜀ICP备13014270号&#45;&#45;4</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+//        $('.navbar-collapse a').click(function () {
+//            $('.navbar-collapse').collapse('hide');
+//        });
+    });
+</script>
+</body>
+</html>

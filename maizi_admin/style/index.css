@@ -1,0 +1,90 @@
+body{
+    font-family:"Microsoft YaHei",sans-serif;
+}
+.margin{
+   margin: 50px 0;
+}
+/*导航*/
+.navbar-default{
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(56,56,56,0.2);
+    /*height: 60px;*/
+}
+.navbar-default .navbar-brand{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.navbar-collapse{
+    /*margin-top: 8px;*/
+    font-size: 18px;
+    border: none;
+    font-weight: 500;
+    background-color: white;
+}
+.dropdown-menu{
+    font-size: 15px;
+}
+.navbar-toggle{
+    margin-top: 20px;
+}
+.navbar-default .navbar-toggle:hover{
+    border-color: #40D2B1;
+    background-color: rgba(69,210,184,0.4);
+}
+
+/*警告框*/
+.alert.alert-danger.alert-dismissible {
+    line-height: 30px;
+    /*background-color: rgba(255, 9, 0, 0.14);*/
+}
+/*进度条*/
+.progress{
+    margin-bottom: 16px;
+}
+/*头像*/
+.wh64{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.well{
+    overflow: hidden;
+}
+.mar_t15{
+    margin-top: 15px;
+}
+/*底部*/
+footer{
+    text-align: center;
+    padding:20px 0;
+    font-weight: 400;
+}
+/*page-header*/
+.page-header{
+    margin-top: 0;
+}
+.page-header h1{
+    margin: 0;
+    font-size: 16px;
+}
+.user_search{
+    padding: 30px 10px;
+    border: solid 1px rgba(0,0,0,0.1);
+    border-top: none;
+}
+/*padding*/
+.pad0{
+    padding: 0;
+}
+/*taglist*/
+.taglist{
+    padding: 15px 0;
+}
+.taglist .alert{
+    margin: 0 10px 0 0;
+}
+.panel.panel-default {
+    margin-top: 30px;
+}
