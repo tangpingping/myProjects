@@ -1,0 +1,340 @@
+
+.vertical-line{
+    height: 100%;
+    width: 5px;
+}
+.all{
+    /*min-width: 1200px;*/
+    /*width: 100%;*/
+    margin: auto;
+    /*height: 1400px;*/
+    overflow: hidden;
+}
+.content{
+
+}
+.fl-left{
+    float: left;
+}
+@font-face {font-family: "iconfont";
+    src: url('../images/fonts/iconfont.eot?t=1493017330931'); /* IE9*/
+    src: url('../images/fonts/iconfont.eot?t=1493017330931#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../images/fonts/iconfont.woff?t=1493017330931') format('woff'), /* chrome, firefox */
+    url('../images/fonts/iconfont.ttf?t=1493017330931') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../images/fonts/iconfont.svg?t=1493017330931#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.nav{
+    background-color: rgba(38,38,38,0.3);
+    height: 100px;
+    margin: auto;
+    width: 100%;
+    /*padding: 0 200px 0 300px;*/
+    box-shadow: 1px 1px 10px rgba(255,255,255,0.3);
+    -webkit-box-shadow:1px 1px 10px rgba(255,255,255,0.3) ;
+    -moz-box-shadow: 1px 1px 10px rgba(255,255,255,0.3);
+}
+.nav-div{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.nav li{
+    display: inline;
+    width: 126px ;
+}
+.nav-center{
+    margin-left: 120px;
+    width: 800px ;
+    position: relative;
+    margin-top: 16px;
+}
+.nav-center a{
+    color: #ad8c58;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: bold;
+    line-height:70px;
+}
+.login-div{
+    /*margin-left: 50px;*/
+}
+.login-div span a{
+    color: #ad8c58;
+    text-decoration: none;
+    font-weight: bold;
+    line-height:98px;
+}
+.login-success span{
+    cursor: pointer;
+    color: #ad8c58;
+    font-weight: bold;
+    line-height:98px;
+}
+.login:before{
+    font-family: iconfont;
+    content: '\e732';
+    margin: 0 15px;
+}
+.nav-center .bottom-line{
+    position: absolute;
+    height: 3px;
+    left: 40px;
+    width: 100px;
+    top:100px;
+    background-color: #ad8c58;
+    transition-duration: 0.5s;
+}
+.content-header{
+    /*background-color: rgba(85, 85, 85, 0.4);*/
+    text-align: center;
+}
+
+.line{
+    height: 2px;
+    background-color: #ad8c58;
+    width: 100%;
+    position: absolute;
+    top: 858px;
+}
+.content-center{
+   width: 100%;
+}
+.img-div{
+    top:850px;
+    /*left: 50%;*/
+    max-width: 80%;
+    overflow: hidden;
+    height: 322px;
+    margin: 0 auto;
+}
+
+.img-div>div{
+    border: 1px solid rgba(173, 140, 88, .3);
+    margin: .5%;
+    width: 17.9%;
+    height: 96%;
+    overflow: hidden;
+    text-align: center;
+    background:url("../images/div-bg.png") no-repeat;
+}
+.img-div button{
+    background: transparent;
+    border: none;
+    border: 1px solid rgba(173, 140, 88, .3);
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    color: #ad8c58;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color .5s;
+    box-shadow: 1px 1px 10px rgba(173, 140, 88, .3);
+}
+.img-div button:hover{
+    background-color: rgba(173, 140, 88, .7);
+    color: #100c08;
+}
+.img-div img{
+    opacity:.8;
+}
+i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #ad8c58;
+    border-radius: 50%;
+    position: relative;
+    top:-100px;
+}
+.top-big-video{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -960px;
+    height: 750px;
+    opacity: .8;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.content-pics{
+    position: relative;
+    overflow: hidden;
+    height: 750px;
+}
+.content-footer{
+    margin-top: 50px;
+}
+.z-video-btn{
+    transition: display .3s;
+    display: block;
+    width: 665px;
+    height: 348px;
+    background: url("../images/play-video.png") no-repeat;
+}
+.content-footer{
+    overflow: hidden;
+
+}
+.footer-div{
+    width: 80%;
+    margin: 0 auto;
+}
+.v-btn{
+    width: 660px;
+    height: 340px;
+}
+
+
+.word{
+    color: rgba(255, 255, 255, 0.65);
+    text-shadow: 1px 1px 10px #ad8c58;
+}
+.video-content img{
+    box-shadow:  0 0 10px #020a12;
+}
+
+
+#footer_ied {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.wrap_ied{
+    margin: 80px auto 0 auto;
+}
+#footer_ied a{
+    color: #6e6e6e;
+    font-size: 14px;
+}
+#footer_ied p{
+    color: #6e6e6e;
+    line-height: 24px;
+    font-size: 10px;
+}
+.default{
+    display: block;
+    /* width: 328px; */
+    color: #8a8a8a;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 6% 10% 10% 10%;
+    letter-spacing: 3px;
+}
+h4{
+    color: #960c30;
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+}
+.default p{
+    color: #8a8a8a;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 36px;
+}
+.video-content{
+    width: 100%;
+    text-align: center;
+}
+.video-content img{
+    margin: 0 auto;
+}
+
+html.no_scroll,body.no_scroll{
+    overflow: hidden;
+}
+/*登录注册*/
+.login-div-content,.register-div{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    z-index: 10;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 100%;
+}
+@keyframes toptocenter {
+    from{margin-top: 15%;opacity: .5;}
+    to{margin-top: 17%;opacity: 1;}
+}
+.login-center-content-div,.register-center-content-div{
+    width: 27%;
+    height: 40%;
+    position: absolute;
+    z-index: 12;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 17%;
+    border-radius: 1%;
+    animation: toptocenter 1s;
+    -moz-animation: toptocenter 1s;
+    -webkit-animation: toptocenter 1s;
+    padding: .1% .5%;
+    text-align: center;
+    margin-left: 38%;
+}
+.login-center-content-div input,.register-center-content-div input{
+    border: none;
+    border: 1px solid #ad8c58;
+    outline: none;
+    height: 30px;
+    width: 50%;
+    padding-left: 10px;
+    border-radius:1px ;
+}
+
+.login-btn button,.register-btn button{
+    background-color: #ad8c58;
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.close{
+    width: 5%;
+    height: 6%;
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    z-index: 15;
+    transition: scale .5s ;
+    cursor: pointer;
+}
+.close:hover{
+    transform: scale(1.2);
+}
+
+/*登录成功标记*/
+.success-login{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    z-index: 12;
+    /*background-color: rgba(0,0,0,0.3);*/
+    margin: 0 auto;
+    margin-top: 17%;
+    border-radius: 50%;
+    animation: toptocenter 1s;
+    -moz-animation: toptocenter 1s;
+    -webkit-animation: toptocenter 1s;
+    padding: .1% .5%;
+    text-align: center;
+    margin-left: 43%;
+}
+.success-login img{
+    width: 50%;
+    height: 50%;
+    margin-top: 28%;
+}
+
