@@ -1,0 +1,66 @@
+<style>
+     li.order-first{
+        /*padding: 15px 0;*/
+        border-bottom: solid 2px #00c3f5;
+    }
+    li.order-first a{
+        color: #00c3f5;
+    }
+</style>
+<div class="content-right fl-left">
+    <div class="right-head">
+        <ul>
+            <li class="order-first" ><a href="javaScript:;">全部订单</a></li>
+            <li><a href="javaScript:;">代付款</a></li>
+            <li><a href="javaScript:;">待发货</a></li>
+            <li><a href="javaScript:;">已发货</a></li>
+            <li><a href="javaScript:;">其他</a></li>
+        </ul>
+        <a href="javaScript:;" class="fl-right tips"><span>找不到订单？用手机号查询试试>></span></a>
+    </div>
+    <div class="right-content">
+        <ul class="right-content-head">
+            <li class="content-first">订单明细</li>
+            <li>售后</li>
+            <li>金额</li>
+            <li>状态</li>
+            <li>操作</li>
+        </ul>
+        <div class="right-center">
+            <p style="font-size: 24px;color: #878787;">您暂无此类订单，赶快去下单吧！</p>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.right-head li').click(function () {
+            var str = $(this).attr('class');
+            if(str == 'order-first'){
+            }else {
+                $('.right-head li').removeClass('order-first');
+                $(this).addClass('order-first');
+            }
+        });
+        $('.right-head li').hover(function () {
+            var str = $(this).attr('class');
+            if(str ==  'order-first'){
+                $(this).find('a').css('color','#00c3f5');
+                $(this).css('border-bottom','solid 2px #00c3f5');
+            }else {
+                $(this).find('a').css('color','#00c3f5');
+                $(this).css('border-bottom','solid 2px #00c3f5');
+            }
+//           console.log(str);
+        },function () {
+            var str = $(this).attr('class');
+            if( str ==  'order-first'){
+
+            }else {
+                $(this).find('a').css('color','#6e6e6e');
+                $(this).css('border-bottom-color','transparent');
+            }
+//            $(this).find('a').css('color','#6e6e6e');
+//            $(this).css('border-bottom-color','transparent');
+        });
+    });
+</script>

@@ -1,0 +1,38 @@
+<div class="register">
+    <!--<div class="register-head">-->
+    <!--<span><a href="#" style="color:#2aabd2;">注册魅族账号</a></span>-->
+    <!--</div>-->
+    <div class="input-group">
+        <!--<span>-->
+        <!--<span class="input-group-addon"> +86 <i><img src="../../images/login/arrow-down.png" alt=""></i></span>-->
+        <!--<input type="text" placeholder="手机号码">-->
+        <!--</span>-->
+        <span>+86 <img src="../../images/login/arrow-down.png" alt=""></span> <span>|</span>
+        <input type="text" placeholder="手机号码">
+    </div>
+    <div class="register-bottom">
+        <span>点击立即注册，即表示您同意并愿意遵守 <a href="#">Flyme服务协议</a>和 <a href="#">法律声明</a></span>
+        <br>
+        <button class="btn-register">
+            立 即 注 册
+        </button>
+        <br>
+        <button class="register-login">登 录</button>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.btn-login').click(function () {
+            var valueIphone = $('.iphone').val();
+//            console.log(value);
+            var valuePassword = $('.password').val();
+            if (valueIphone == '') {
+                alert('账户输入不能为空');
+            }
+            else if (valuePassword == '') {
+                alert('请输入密码');
+            }
+        });
+    });
+</script>

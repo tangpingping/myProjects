@@ -1,0 +1,30 @@
+<div class="content-left fl-left">
+    <div class="left-img-top">
+        <ul>
+            <li> <a href="javaScript:;"><img src="../images/productDetails/pro-top-01.jpg" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="../images/productDetails/pro-top-02.jpg" alt=""></a></li>
+            <li> <a href="javaScript:;"><img src="../images/productDetails/pro-top-03.jpg" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="../images/productDetails/pro-top-04.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="left-img-bottom">
+        <ul>
+            <li style="border: 1px solid rgba(0,0,0,.2);"><a href="javaScript:;"><img src="../images/productDetails/pro-01.jpg" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="../images/productDetails/pro-02.jpg" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="../images/productDetails/pro-03.jpg" alt=""></a></li>
+            <li><a href="javaScript:;"><img src="../images/productDetails/pro-04.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $('.left-img-top li:gt(0)').hide();
+    $('.left-img-bottom li').click(function () {
+        // console.log('sss');
+        var index = $(this).index();
+        $('.left-img-top li').hide();
+        $('.left-img-top li').eq(index).show();
+        $('.left-img-bottom li').css('border','rgba(0,0,0,.1) 1px solid');
+        $('.left-img-bottom li').eq(index).css('border','rgba(0,0,0,.2) 1px solid');
+    });
+</script>

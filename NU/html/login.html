@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号-登录</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/normalize.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../lib/bootstrap-3.3.0-dist/dist/js/angular-1.6.4.min.js"></script>
+</head>
+
+<body>
+<div class="all">
+    <div id="top"></div>
+    <div class="content-center">
+        <div id="login" ng-app="myLogin" ng-controller="myCtrlLogin">
+            <div class="login" >
+                <div class="icon">
+                    <img src="../images/login/qr.png" alt="">
+                </div>
+                <div class="login-head">
+                    <div class="head" style="color: #525252;">
+                        <span><a href="#" style="color:#2b8cc5;">账号登录</a></span><span>|</span>
+                        <span><a href="#" style="color: #4f4f4f;">验证码登录</a></span>
+                    </div>
+                </div>
+                <form  name="userForm"  ng-submit="submitForm(userForm.$valid)" novalidate>
+                    <div class="form">
+                        <input type="text" placeholder="手机号/魅族账号" class="iphone" style="margin-top: 80px;"
+                               ng-model="userIphone" name="userIphone"
+                               ng-pattern="/13[123569]{1}\d{8}|15[1235689]\d{8}|18\d{9}/" required><br>
+                        <span style="color: red" ng-show="userForm.userIphone.$dirty && userForm.userIphone.$invalid ">
+                        <!--<span ng-show="!userForm.name.$pristine && myForm.userIphone.$dirty && myForm.userIphone.$invalid">用户名是必须的</span>-->
+                        <span ng-show="userForm.userIphone.$error.pattern" style="font-size: 12px;">非法的电话号码</span>
+                        </span>
+                        <input type="password" placeholder="密码" class="password" name="password" ng-model="password" ><br>
+                        <span style="color: red;font-size: 12px;" ng-show="userForm.password.$dirty && userForm.password.$invalid">
+                        <!--<span ng-show="!userForm.name.$pristine && myForm.userIphone.$dirty && myForm.userIphone.$invalid">用户名是必须的</span>-->
+                        密码不能为空
+                        </span>
+                    </div>
+                    <div class="form-bottom">
+                        <span class="check-icon"><i class="i_icon"></i></span>
+                        <input type="checkbox"><span class="word">记住登录状态</span><br>
+                        <button class="btn-login"  style="cursor: pointer;" ng-disabled="userForm.$invalid">登录</button>
+                    </div>
+                </form>
+                <div class="login-footer">
+                    <a href="javaScript:;" class="fl-left register-link">注册</a>
+                    <a href="#" class="fl-right">忘记密码？</a>
+                </div>
+            </div>
+            <div class="register">
+                <div class="register-head">
+                    <span><a href="#" style="color:#2aabd2;">注册魅族账号</a></span>
+                </div>
+                <div class="input-group">
+       <span>
+         <span class="input-group-addon"> +86 <i><img src="../images/login/arrow-down.png" alt=""></i></span>
+         <input type="text" placeholder="手机号码">
+       </span>
+                </div>
+                <div class="register-bottom">
+                    <span>点击立即注册，即表示您同意并愿意遵守 <a href="#">Flyme服务协议</a>和 <a href="#">法律声明</a></span>
+                    <br>
+                    <button class="btn-register">
+                        立即注册
+                    </button>
+                    <br>
+                    <a href="javaScript:;" class="login-a" >登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script src="../js/login.js"></script>
+<script>
+    var myLogin = angular.module('myLogin', []);
+
+    // create angular controller
+    myLogin.controller('myCtrlLogin', function ($scope) {
+
+        // function to submit the form after all validation has occurred
+        $scope.submitForm = function (isValid) {
+            console.log(isValid);
+            // check to make sure the form is completely valid
+            if (isValid) {
+                console.log(isValid);
+
+            }
+
+        };
+//        $scope.userIphone = '';
+////        $scope.email = '';
+    });
+    $(document).ready(function () {
+        $('.btn-login').click(function () {
+            var valueIphone = $('.iphone').val();
+//            console.log(value);
+            var valuePassword = $('.password').val();
+            if(valueIphone == '' || valuePassword == ''){
+                alert('输入框不能为空');
+            }else {
+                window.location.href='index.html';
+            }
+        });
+        var status = false;
+        $('.check-icon i').unbind().click(function () {
+            status = !status;
+            if(status){
+                $('.check-icon i').css('background-position','-31px -127px');
+            }else {
+                $('.check-icon i').css('background-position','0 -127px');
+            }
+
+        });
+    });
+</script>
+</body>
+</html>

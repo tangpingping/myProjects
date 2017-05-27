@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <link rel="stylesheet" href="../../css/app/login.css">
+    <link rel="stylesheet" href="../../css/app/register.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-3.3.0-dist/dist/css/normalize.css">
+</head>
+<body>
+<div>
+    <div class="all">
+        <div class="login">
+            <div class="head">
+                <span><a href="login.html">账号登录</a></span>
+                <span class="dis_mar">|</span>
+                <span class="dis_mar code" style="color: #00c3f5;">验证码登录</span>
+            </div>
+            <form action=""  class="input-form">
+                <div class="input-group">
+                    <span>+86 <img src="../../images/login/arrow-down.png" alt=""></span> <span>|</span>
+                    <input type="text" placeholder="手机号码">
+                </div>
+                <div class="code input-group">
+                    <input type="text" placeholder="验证码">
+                    <span>|</span><span> &nbsp;&nbsp; &nbsp;&nbsp; 获取验证码</span>
+                </div>
+            </form>
+            <div class="btn_content">
+                <button style="background-color: #00c3f5;color: white;">登录</button>
+                <button>注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../lib/bootstrap-3.3.0-dist/dist/js/auto-size.js"></script>
+<script src="../../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script>
+    //
+
+    $(document).ready(function () {
+        var status = false;
+        $('.check-icon i').unbind().click(function () {
+            status = !status;
+            if(status){
+                $('.check-icon i').css('background-position','-31px -127px');
+            }else {
+                $('.check-icon i').css('background-position','0 -127px');
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

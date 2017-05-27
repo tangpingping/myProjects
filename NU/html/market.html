@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商城</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/normalize.css">
+    <link rel="stylesheet" href="../css/market.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/car-pic.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../lib/bootstrap-3.3.0-dist/dist/js/angular-1.6.4.min.js"></script>
+</head>
+<body>
+<div class="all">
+    <div id="top"></div>
+    <div id="head"></div>
+    <div id="pic_play">
+         <span id="pics">
+            <a href="#"><img src="../images/market/car-01.jpg"></a>
+            <a href="#"><img src="../images/market/car-02.jpg"></a>
+            <a href="#"><img src="../images/market/car-03.jpg"></a>
+            <a href="#"><img src="../images/market/car-04.jpg"></a>
+            <a href="#"><img src="../images/market/car-05.jpg"></a>
+         </span>
+        <span class="left_btn"><</span>
+        <span class="right_btn">></span>
+        <span class="bottom_btn" >
+            <div></div><div></div><div></div><div></div>
+            <div class="bottom_btn_last"></div>
+        </span>
+    </div>
+    <div class="slide" ng-app="mySlide" ng-controller="myCtrl">
+        <div class="slide-list">
+            <ul>
+                <li id="phone"><a href="#">{{message}}</a></li>
+                <li><a href="#">智能设备</a></li>
+                <li><a href="#">智能穿戴</a></li>
+                <li><a href="#">游戏设备</a></li>
+                <li><a href="#">数码影音</a></li>
+                <li><a href="#">手机配件/移动电源</a></li>
+                <li><a href="#">移动存储/办公设备</a></li>
+                <li><a href="#">生活周边</a></li>
+            </ul>
+        </div>
+        <div class="list-div">
+            <div class="list-01">
+                <div class="list-01-left fl-left">
+                    <h3>魅族手机</h3>
+                    <ul class="fl-left">
+                        <li><a href="javaScript:;">
+                            <img src="../images/market/list/list-01.jpg" alt="">
+                            <span>魅族PRO 6Plus</span>
+                        </a></li>
+                        <li><a href="javaScript:;">
+                            <img src="../images/market/list/list-02.png" alt="">
+                            <span>魅族PRO 6s</span>
+                        </a></li>
+                    </ul>
+                    <ul class="fl-left">
+                        <li><a href="#">
+                            <img src="../images/market/list/list-03.png" alt="">
+                            <span>魅族 MX6</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/market/list/list-04.png" alt="">
+                            <span>魅族PRO 6</span>
+                        </a></li>
+                    </ul>
+                    <h3 class="cl">魅蓝手机</h3>
+                    <ul class="cl fl-left">
+                        <li><a href="javaScript:;">
+                            <img src="../images/market/list/list-05.png" alt="">
+                            <span>魅蓝 E2</span>
+                        </a></li>
+                        <li><a href="javaScript:;">
+                            <img src="../images/market/list/list-06.png" alt="">
+                            <span>魅蓝 5s</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/market/list/list-07.png" alt="">
+                           <span> 魅蓝 Notes5</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/market/list/list-08.png" alt="">
+                           <span> 魅蓝 5</span>
+                        </a></li>
+                    </ul>
+                    <ul class="fl-left" style="margin-left: 40px;">
+                        <li><a href="javaScript:;">
+                            <img src="../images/market/list/list-09.jpg" alt="">
+                            <span>魅蓝 Note3</span>
+                        </a></li>
+                        <li><a href="javaScript:;">
+                            <img src="../images/market/list/list-10.png" alt="">
+                            <span>魅蓝 X</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/market/list/list-11.png" alt="">
+                            <span>魅蓝 E</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../images/market/list/list-12.png" alt="">
+                            <span>魅蓝 Max</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="list-01-right fl-left">
+                    <img src="../images/market/list/list-13.jpg" alt="">
+                    <img src="../images/market/list/list-14.jpg" alt="">
+                </div>
+            </div>
+            <div class="list-01">
+                <img src="../images/market/list/div-02.png" alt="">
+            </div>
+            <div class="list-01">
+                <img src="../images/market/list/div-03.png" alt="">
+            </div>
+            <div class="list-01">
+                <img src="../images/market/list/div-04.png" alt="">
+            </div>
+            <div class="list-01">
+                <img src="../images/market/list/div-05.png" alt="">
+            </div>
+            <div class="list-01">
+                <img src="../images/market/list/div-06.png" alt="">
+            </div>
+            <div class="list-01">
+                <img src="../images/market/list/div-07.png" alt="">
+            </div>
+            <div class="list-01">
+                <img src="../images/market/list/div-08.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-head">
+            <ul>
+                <li>
+                    <div class="first">
+                        <div class="first-one-line">
+                            <span class="icon-01"></span>
+                            <span class="icon-02"></span><br>
+                            <i>&nbsp;M码通道</i>&nbsp;<i> 以旧换新</i>
+                        </div>
+                        <!--<br>-->
+                        <div class="first-two-line">
+                            <span class="icon-03"></span>
+                            <span class="icon-04"></span><br>
+                            <i>NU意外保</i>
+                            <i>回购单查询</i>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <div class="fl-left">
+                        <img src="../images/market/content-01.jpg" alt="">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="fl-left">
+                        <a href="productDetails.html"><img src="../images/market/content-02.jpg" alt=""></a>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="fl-left">
+                        <img src="../images/market/content-03.jpg" alt="">
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="fl-left">
+                        <img src="../images/market/content-04.png" alt="">
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="content-center">
+            <div class="bg-head">
+                <div class="content-center-head" style="width: 1240px;">
+                    <h1>热品推荐</h1>
+                    <!--轮播图-->
+                    <div class="pre-next-button">
+                        <button id="singlePagePre"> <</button>
+                        <button id="singlePageNext"> ></button>
+                    </div>
+                    <div style="width: 1245px;height: 340px;overflow: hidden;">
+                        <div id="single" style="width:2490px;height: 338px;">
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/single-one.png" alt=""></a>
+                                <p>魅蓝 Note5</p>
+                                <p class="word-gray"><span></span>12期免息 64G赠移动电源</p>
+                                <p class="word-red">￥1099起</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/phone-01.png" alt=""></a>
+                                <p>魅蓝 Max</p>
+                                <p class="word-gray">购机享三期免息</p>
+                                <p class="word-red">￥1699</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/phone-02.jpg" alt=""></a>
+                                <p>魅族移动电源（标准版）</p>
+                                <p class="word-gray">素雅百搭 颜值典范</p>
+                                <p class="word-red">￥99</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/phone-03.png" alt=""></a>
+                                <p>纽曼 NM-VR30</p>
+                                <p class="word-gray">佩戴舒适 人性化设计</p>
+                                <p class="word-red">限时特惠 ￥35.9</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/first-05.png" alt=""></a>
+                                <p>乐心心率手环MAMBO2</p>
+                                <p style="font-size: 12px;color: #cb0000"> <span class="span-red">领劵</span>立减20元</p>
+                                <p class="word-red">￥169</p>
+                            </div>
+                            <!--第二页-->
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/second-01.png" alt=""></a>
+                                <p>铁三角 ATH-C999</p>
+                                <p class="word-gray">经典平头塞</p>
+                                <p class="word-red">限时特惠 ￥179</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/phone-01.png" alt=""></a>
+                                <p>魅蓝 5s 礼盒版</p>
+                                <p style="font-size: 12px;color: #cb0000"><span>限量</span> 32G礼盒版赠EP-21HD耳机</p>
+                                <p class="word-red">￥899起</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/second-03.png" alt=""></a>
+                                <p>JBL STV112蓝牙音箱</p>
+                                <p class="word-gray">最高支持6期分期免息</p>
+                                <p class="word-red">限时特惠 ￥999</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/phone-03.png" alt=""></a>
+                                <p>FiiO飞傲M3 无损音乐播放器</p>
+                                <p class="word-gray">支持3期免息</p>
+                                <p class="word-red">￥298</p>
+                            </div>
+                            <div class="single-div fl-left">
+                                <a href="javaScript:;"><img src="../images/market/phone-04.png" alt=""></a>
+                                <p>东芝v8高端2.5英寸移动硬盘</p>
+                                <p class="word-gray">支持3期免息</p>
+                                <p class="word-red">￥419</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-tips" style="margin-top: 30px;">
+                        <img src="../images/market/center.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="bg-content" class="bg-content"></div>
+            <div class="bg-content-01"></div>
+            <div class="bg-content-02"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script src="../js/car-pic.js"></script>
+<script>
+    $('#top').load('moudle/head.html');
+    $('#footer').load('moudle/footer.html');
+    $('.bg-content').load('moudle/market-list.html');
+    $('.bg-content-01').load('moudle/market-list-01.html');
+    $('.bg-content-02').load('moudle/market-list-02.html');
+    $('#head').load('moudle/head-title.html');
+//    new Vue({
+//        el: '#phone',
+//        data: {
+//            message: '手机'
+//        }
+//    });
+    var slide = angular.module('mySlide',[]);
+    slide.controller('myCtrl',function ($scope) {
+       $scope.message="手机";
+    });
+    function singleSliding() {
+        var $single = $('#single');
+        var $singlePagePre = $('#singlePagePre');
+        var $singlePageNext = $('#singlePageNext');
+
+        var time;
+        var status = false;
+        var count = 0;
+        $singlePagePre.css('color', '#f2f2f2');
+        $singlePageNext.css('color', 'black');
+        function animation() {
+            if (status) {
+                status = !status;
+                count = 0;
+                $singlePagePre.css('color', '#f2f2f2');
+                $singlePageNext.css('color', 'black');
+                $singlePageNext.removeAttr('disabled');
+                $singlePagePre.attr('disabled', 'disabled');
+                $singlePageNext.unbind().click(function () {
+                    stop();
+                    animation();
+                    play();
+                });
+                $single.animate({left: '0'});
+            } else {
+                status = !status;
+                count = 1;
+                $singlePagePre.css('color', 'black');
+                $singlePageNext.css('color', '#f2f2f2');
+                $singlePagePre.removeAttr('disabled');
+                $singlePageNext.attr('disabled', 'disabled');
+                $singlePagePre.unbind().click(function () {
+                    animation();
+                    stop();
+                    play();
+                });
+                $single.animate({left: '-100%'});
+            }
+        }
+
+        function play() {
+            time = setInterval(animation, 4000);
+        }
+
+        function stop() {
+            clearInterval(time);
+        }
+
+        if (count == 0) {
+            $singlePageNext.removeAttr('disabled');
+            $singlePagePre.attr('disabled', 'disabled');
+            $singlePageNext.unbind().click(function () {
+                stop();
+                animation();
+                play();
+            });
+        } else {
+            $singlePagePre.removeAttr('disabled');
+            $singlePageNext.attr('disabled', 'disabled');
+            $singlePagePre.unbind().click(function () {
+                animation();
+                stop();
+                play();
+            });
+        }
+        play();
+    }
+    singleSliding();
+    //      头部轮播左边栏list
+    $('.list-div>div').hide();
+//    $('.list-div>div').eq(0).show();
+    var index;
+    $('.slide-list li').hover(function () {
+        index = $(this).index();
+        $('.list-div>div').hide();
+        $('.list-div>div').eq(index).show();
+        $('.slide-list li').css('background-color', 'rgba(255,255,255,0)');
+        $(this).css('background-color', 'rgba(255,255,255,0.7)');
+        $('.slide').hover(function () {
+
+        }, function () {
+            $('.slide-list li').css('background-color', 'rgba(255,255,255,0)');
+            $('.list-div>div').hide();
+        });
+
+    }, function () {
+
+    });
+
+</script>
+<!--if ie-->
+</body>
+</html>

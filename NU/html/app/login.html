@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <link rel="stylesheet" href="../../css/app/login.css">
+    <link rel="stylesheet" href="../../css/app/register.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-3.3.0-dist/dist/css/normalize.css">
+</head>
+<body>
+<div>
+<div class="all">
+    <div class="login">
+        <div class="head">
+            <span style="color: #00c3f5;">账号登录</span>
+            <span class="dis_mar">|</span>
+            <span class="dis_mar code"><a href="Verification_code.html">验证码登录</a></span>
+        </div>
+        <form action="" id="form-input" class="input-form">
+            <div class="input_content">
+                <input type="text" placeholder="手机号/魅族账号" class="iphone"><br>
+                <span style="color: red;font-size: 12px;display: inherit;" class="tips">请输入正确的电话号码</span><br>
+                <input type="password" placeholder="密码">
+
+            </div>
+            <div class="form-bottom">
+                <span class="check-icon"><i class="i_icon"></i></span>
+                <input type="checkbox" ><span class="word">记住登录状态</span>
+                <a href="javaScript:;">忘记密码？</a>
+            </div>
+        </form>
+        <div class="btn_content">
+            <button style="background-color: #00c3f5;color: white;" class="submit">登录</button>
+           <a href="app_register.html"><button>注册</button></a>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../../lib/bootstrap-3.3.0-dist/dist/js/auto-size.js"></script>
+<script src="../../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script>
+//
+
+    $(document).ready(function () {
+        var status = false;
+        $('.check-icon i').unbind().click(function () {
+            status = !status;
+            if(status){
+                $('.check-icon i').css('background-position','-31px -127px');
+            }else {
+                $('.check-icon i').css('background-position','0 -127px');
+            }
+        });
+        $('.tips').css('opacity','0');
+        $('.submit').attr('disabled',true);
+        $('.iphone').keyup(function () {
+            console.log($('.iphone').val());
+            var re = /13[123569]{1}\d{8}|15[1235689]\d{8}|18\d{9}/;
+            if(re.test($('.iphone').val())){
+                console.log('true');
+                $('.tips').css('opacity','0');
+                $('.submit').removeAttr('disabled');
+            }else {
+                console.log('false');
+                $('.tips').css('opacity','1');
+            }
+        });
+        $('.submit').click(function () {
+            window.location.href="personal.html"
+        });
+
+    });
+
+</script>
+</body>
+</html>

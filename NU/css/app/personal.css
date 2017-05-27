@@ -1,0 +1,90 @@
+.head-top{
+    background: url("../../images/app/person/bg-account.jpg") no-repeat;
+    width: 100%;
+    height:3rem;
+}
+.head-top img{
+    width: .35rem;
+    height: .35rem;
+    margin-left: .2rem;
+    position: relative;
+    top:-.2rem;
+}
+.head-pic{
+    margin: 0 auto;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top:-.5rem;
+}
+.head-pic img{
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 0 auto;
+    position: absolute;
+    top:.02rem;
+}
+span.userName{
+    font-size: .25rem;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    left: 37%;
+    top:-1.1rem;
+    color: white;
+    font-weight: 100;
+}
+.fl-left{
+    float: left;
+}
+.fl-right{
+    float: right;
+}
+.center{
+    width: 100%;
+    font-size:.3rem;
+}
+.order{
+    width: 90%;
+    font-size:.3rem;
+    color: #565656;
+    box-sizing: border-box;
+    margin: .3rem auto;
+}
+.content-list-first img{
+    width: .5rem;
+    height: .5rem;
+}
+.content-list-first{
+    font-size: .3rem;
+    margin-top: .8rem;
+}
+.content-list-first li{
+    display: inline-block;
+    width: 23.5%;
+    text-align: center;
+    border-right: .01rem solid rgba(0,0,0,.2);
+}
+.center a{
+    color: #2a2a2a;
+    text-decoration: none;
+}
+.content-bottom-list li{
+    margin: .7rem .5rem 0 .3rem;
+    list-style: none;
+}
+.bottom{
+    width: 100%;
+    font-size: .28rem;
+    text-align: center;
+    color: #616161;
+}
+.bottom span{
+   padding: .3rem;
+    display: inline-block;
+    margin-top: .8rem;
+}
+

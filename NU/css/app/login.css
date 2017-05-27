@@ -1,0 +1,92 @@
+.all,.login{
+    width: 100%;
+}
+body{
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-size: .5rem;
+}
+.head{
+    margin: 1.4rem auto;
+    font-size: .41rem;
+    width: 71%;
+    color: #969696;
+}
+.head a{
+    color: #969696;
+    text-decoration: none;
+}
+.dis_mar{
+    display: inline-block;
+    margin-left: .4rem;
+}
+.input_content{
+    width: 95%;
+    margin: 0 auto;
+}
+#form-input input{
+    border-radius: .1rem;
+    height: 1rem;
+}
+.input_content input{
+    height: .8rem;
+    min-width: 95%;
+    margin-bottom: .8rem;
+    border: none;
+    border: 1px solid rgba(0,0,0,.2);
+    /*padding: 0 .3rem;*/
+    padding-left: .3rem;
+    outline-color: lightblue;
+}
+/*.input_content input*/
+
+.form-bottom input{
+    display: none;
+}
+.check-icon{
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.form-bottom{
+    width: 95%;
+    margin: 0 auto;
+}
+.word{
+    font-size: .3rem;
+}
+.i_icon{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.check-icon i{
+    background: url("../../images/login/elements.png") no-repeat;
+    background-position:0 -127px;
+}
+.form-bottom a{
+    text-decoration: none;
+    color: #32A5E7;
+    float: right;
+    font-size: .3rem;
+    line-height: .8rem;
+}
+/*按钮*/
+.btn_content{
+    width: 95%;
+    margin: 0 auto;
+}
+.btn_content button{
+    width: 100%;
+    margin: .3rem 0;
+    padding: .3rem 1rem;
+    border: none;
+    background:none;
+    border-radius: .1rem;
+    letter-spacing: .2rem;
+    font-size: .35rem;
+    outline: none;
+}

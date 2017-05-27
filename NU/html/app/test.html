@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            float: left;
+            width: 720px;
+        }
+
+        li img {
+            /*width: 720px;*/
+        }
+
+        .pic-car {
+            /*width: 4320px;*/
+            width: 3600px;
+            overflow: hidden;
+            /*position: relative;*/
+        }
+
+        .pic-car-01 {
+            width: 720px;
+            /*overflow: hidden;*/
+        }
+
+        .demo, .demo-01 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<!--轮播-->
+<div class="demo"><span> < </span></div>
+<div class="demo-01"><span> > </span></div>
+<div class="pic-car-01">
+    <div class="pic-car">
+        <ul>
+            <li><a href="#"><img src="../../images/app/pic_01.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../../images/app/pic_02.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../../images/app/pic_03.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../../images/app/pic_04.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../../images/app/pic_05.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<script src="../../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var _index = 0;
+        var _length = $('.pic-car li').length;
+        console.log(_length);
+//        var _status = [''];
+        $('.demo-01').click(function () {
+            if (_index > 4) {
+                _index = 0;
+            } else {
+                _index++;
+                $('.pic-car li').animate({left: (-720 * _index) + 'px'}, 300);
+                console.log('111');
+                $('.pic-car li').eq(_index-1).animate({left: (720 * (_length-_index)) + 'px'}, 300);
+            }
+
+        });
+        $('.demo').click(function () {
+            if (_index > 4) {
+                _index = 0;
+            } else {
+                _index--;
+
+            }
+
+        });
+
+
+    });
+</script>
+
+</body>
+</html>
