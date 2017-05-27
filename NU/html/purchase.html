@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/normalize.css">
+    <link rel="stylesheet" href="../css/purchase.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+<div  ng-app="myApp" ng-controller="myCtrl"  class="all">
+    <div id="top"></div>
+    <div id="head"></div>
+    <div class="content">
+        <div class="content-head">
+            <span>首页</span><span> > </span>
+            <span>我的商城</span> <span> > </span>
+            <span style="color: #2aabd2;" class="road">我的订单</span>
+        </div>
+        <div class="content-left fl-left">
+            <ul class="order-center">
+                <span class="icon-01"><b>订单中心</b></span><br>
+                <li><a href="javaScript:;" style="color: #2aabd2;">我的订单</a></li>
+                <li><a href="javaScript:;">我的回购单</a></li>
+                <li><a href="javaScript:;">我的意外保</a></li>
+            </ul>
+            <ul class="personal-center">
+                <span class="icon-02"><b>个人中心</b></span>
+                <li><a href="javaScript:;">地址管理</a></li>
+                <li><a href="javaScript:;">我的收藏</a></li>
+                <li><a href="javaScript:;">消息提醒</a></li>
+                <li><a href="javaScript:;">建议反馈</a></li>
+            </ul>
+            <ul class="asset-center">
+                <span  class="icon-03"><b>资产中心</b></span>
+                <li><a href="javaScript:;">我的优惠券</a></li>
+                <li><a href="javaScript:;">我的红包</a></li>
+                <li><a href="javaScript:;">我的回购劵</a></li>
+            </ul>
+            <ul class="serve-center">
+                <span class="icon-04"><b>服务中心</b></span>
+                <li><a href="javaScript:;">退款/退换货跟踪</a></li>
+                <li><a href="javaScript:;">意外保</a></li>
+                <li><a href="javaScript:;">以旧换新</a></li>
+            </ul>
+
+        </div>
+        <div id="content-right"></div>
+    </div>
+    <div id="footer"></div>
+</div>
+<hr style="border:0;background-color:#dfdfdf;height:1px;top: 100px;width: 100%;position: absolute;">
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script>
+    $('#top').load('moudle/head.html');
+    $('#footer').load('moudle/footer.html');
+    $('#head').load('moudle/head-title.html');
+    $('#content-right').load('myOrder/myOrder.html');
+    $(document).ready(function () {
+        $('.order-center li').click(function () {
+            console.log();
+            $('.road').text($(this).text());
+            var index = $(this).index();
+            console.log(index);
+            $('.order-center li').find('a').css('color','#6e6e6e');
+            $(this).find('a').css('color','#2aabd2');
+            switch(index){
+                case 2:
+                    $('#content-right').load('myOrder/myOrder.html');
+                    break;
+                case 3:
+                    $('#content-right').load('myOrder/rePurchase.html');
+                    break;
+                case 4:
+                    $('#content-right').load('myOrder/accident.html');
+                    break;
+            }
+        });
+        $('.personal-center li').click(function () {
+            console.log($(this).index());
+            $('.road').text($(this).text());
+        });
+    });
+
+</script>
+</body>
+</html>

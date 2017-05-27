@@ -1,0 +1,15 @@
+.all{
+    width: 100%;
+}
+body{
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-size: .5rem;
+}
+.head span{
+    color: #00c3f5;
+    font-size: .4rem;
+}
+.head{
+    width: 17%;
+    margin: 1.5rem auto;
+}

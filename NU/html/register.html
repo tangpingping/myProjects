@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号-注册</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/normalize.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+<div class="all">
+    <div id="top"></div>
+    <div class="content-center">
+        <div class="register">
+            <div class="register-head">
+                <span><a href="#" style="color:#2aabd2;">注册魅族账号</a></span>
+            </div>
+            <div class="input-group">
+                <span>
+                    <span class="input-group-addon"> +86 <i><img src="../images/login/arrow-down.png" alt=""></i></span>
+                    <input type="text" placeholder="手机号码">
+                </span>
+            </div>
+            <div class="register-bottom">
+                <span>点击立即注册，即表示您同意并愿意遵守 <a href="#">Flyme服务协议</a>和 <a href="#">法律声明</a></span>
+                <br><button class="btn-register">
+                立即注册
+            </button>
+                <br>
+                <a href="#" class="login-a">登录</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script>
+    $('#top').load('moudle/login-top.html');
+    $('#footer').load('moudle/login-bottom.html');
+</script>
+</body>
+</html>

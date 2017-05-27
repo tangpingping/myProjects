@@ -1,0 +1,59 @@
+#pic_play{
+    position: relative;
+    width: 100%;
+    height: 480px;
+    margin-top: 32px;
+    overflow: hidden;
+}
+#pic_play img{
+    position: absolute;
+    left: 0;
+    top:  0;
+    height: 480px;
+    border: none;
+    margin: 0 calc(50% - 960px);
+}
+.left_btn{
+    position: relative;
+    top:230px;
+    left: calc(50% - 375px);
+    color: rgba(255,255,255,0.4);
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 5px;
+    cursor: pointer;
+}
+.right_btn{
+    position: relative;
+    left: calc(50% + 375px);
+    top:230px;
+    color: rgba(255,255,255,0.4);
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 5px;
+    cursor: pointer;
+}
+.display{
+    background-color: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,1);
+}
+.bottom_btn{
+    position: absolute;
+    bottom: 10px;
+    right: calc(50% - 100px);
+    padding: 10px 20px;
+    height: 10px;
+    border-radius: 25px ;
+}
+.bottom_btn div{
+    float: left;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.bottom_btn .bottom_btn_last{
+    margin-right: 0;
+}

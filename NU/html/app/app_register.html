@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+    <link rel="stylesheet" href="../../lib/bootstrap-3.3.0-dist/dist/css/normalize.css">
+    <link rel="stylesheet" href="../../css/app/app_common.css">
+    <link rel="stylesheet" href="../../css/app/register.css">
+</head>
+<body>
+<div class="all">
+    <div class="head">
+        <span>注 册</span>
+    </div>
+    <div class="register">
+        <div class="input-group">
+            <span>+86 <img src="../../images/login/arrow-down.png" alt=""></span> <span>|</span>
+            <input type="text" placeholder="手机号码" class="iphone"><br>
+            <span class="tips" style="color: red;font-size: 12px;display: inline-block;margin-top: 10px;">请输入正确的手机号码</span>
+        </div>
+        <div class="register-bottom">
+            <span>点击立即注册，即表示您同意并愿意遵守 <a href="#">Flyme服务协议</a>和 <a href="#">法律声明</a></span>
+            <br>
+            <button class="btn-register">
+                立 即 注 册
+            </button>
+            <br>
+           <a href="login.html"> <button class="register-login">登 录</button></a>
+        </div>
+    </div>
+</div>
+<script src="../../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script src="../../lib/bootstrap-3.3.0-dist/dist/js/auto-size.js"></script>
+<script>
+    $('.tips').css('opacity','0');
+    $('.btn-register').attr('disabled',true);
+    $('.iphone').keyup(function () {
+        console.log($('.iphone').val());
+        var re = /13[123569]{1}\d{8}|15[1235689]\d{8}|18\d{9}/;
+        if(re.test($('.iphone').val())){
+            console.log('true');
+            $('.tips').css('opacity','0');
+            $('.btn-register').removeAttr('disabled');
+        }else {
+            console.log('false');
+            $('.tips').css('opacity','1');
+        }
+    });
+</script>
+</body>
+</html>

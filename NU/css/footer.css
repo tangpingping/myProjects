@@ -1,0 +1,118 @@
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 30px;
+}
+#footer{
+    background-color: #fafafa;
+}
+.footer .footer-head div{
+    margin-left:100px;
+    text-align: center;
+}
+.footer-head{
+    width: 1200px;
+    overflow: hidden;
+    margin: 20px auto;
+    /*margin-bottom: 20px;*/
+}
+.footer-head span:before{
+    font-size: 28px;
+    color: #727272;
+    font-family: iconfont;
+}
+.fot-icon-01:before{
+    content: '\f0018';
+}
+.fot-icon-02:before{
+    content: '\e509';
+}
+.fot-icon-03:before{
+    content: '\e659';
+}
+.fot-icon-04:before{
+    content: '\e635';
+}
+.fot-icon-05:before{
+    content: '\e658';
+}
+.fot-icon-06:before{
+    content: '\e60f';
+}
+.footer{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.footer-center{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+}
+.footer li{
+    list-style: none;
+}
+
+.footer-left div{
+    margin-right:130px;
+}
+.footer li a{
+    color: #828282;
+    margin: 8px 0;
+    display: block;
+    font-size: 12px;
+}
+.footer b{
+    margin:15px 0 ;
+    display: block;
+    font-size: 14px;
+    color: #757575;
+}
+.footer-left .first{
+    margin-left: 25px;
+}
+.footer-right{
+    color: #838383;
+    text-align: right;
+    margin-right: 66px;
+}
+.footer-right img{
+    margin-right: 8px;
+    position: relative;
+    top:6px;
+}
+.footer-right .btn{
+    display: inline-block;
+    border-radius: 4px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 12px;
+    height: 34px;
+    width: 160px;
+    border: none;
+    line-height: 34px;
+    margin-top: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1fa7ea;
+    transition: all .2s linear;
+}
+.footer-bottom{
+    padding: 30px 0;
+    text-align: center;
+}
+.footer-bottom a,.footer-bottom span{
+    font-size: 10px;
+    color: #707070;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.line{
+    position: relative;
+    height: 2px;
+    border: none;
+    z-index: 2;
+    width:100px;
+    top:11px;
+    background-color: #1fa7ea;
+}

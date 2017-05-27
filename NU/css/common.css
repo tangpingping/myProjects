@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: 微软雅黑;
+}
+@font-face {font-family: "iconfont";
+    src: url('font/iconfont.eot?t=1493110286496'); /* IE9*/
+    src: url('font/iconfont.eot?t=1493110286496#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/iconfont.woff?t=1493110286496') format('woff'), /* chrome, firefox */
+    url('font/iconfont.ttf?t=1493110286496') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('font/iconfont.svg?t=1493110286496#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.all{
+    overflow: hidden;
+}
+.weibo{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAE4UExURQAAAKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqmEd0j8AAABndFJOUwBeSvgTo6wu97uEOBc7cObrRKehBoomz8Vl/lxzJajyvyOG5AzYG7DL9dQZ/Zvj5Xp/RyrcB94IA80PFk4euFeyZGOcyZ2+WyD5jLy6M2CYkR8wL9ktSY3CyGJYbBRove8SmuE3YXe/4XiPAAAA50lEQVQY052Q1VIDURBEO7rZJBBX3N1dg7u7O5z//wPuDQtF8Ug/dZ+amZoZ6b+qHSKRW/hLw8kZoPIdg3X1Mc+ugOeiTaak05j1REabXzTYjVW7nNH5FKtaszA+WIX9oV4YVw4tGTg1yS+NOaW4nbBo/O7B1mzeF+ohUiPNRaUUFE+kfRPV10UknbVTNyia7U39tt+kDhiwtMypYgYeEpmWWqHN0iRZPb4+v6XLTEjN0GjpMnd6ebr/gIzkM00N1Rv2uNGDS6EkDUPA7517xPX77cV5ficA4ZafTx1fXrnuGRRGHI98AvbrNJFirf0KAAAAAElFTkSuQmCC");
+}
+.weixin{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAEXUExURQAAAKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqgsbZzoAAABcdFJOUwB1Oaz1d1oBeO/N/FyV8uOmb763iKv7tR+TsQzzTn+Hp8YhihAD/uXRMe6p56jwDSwc2GE61OvdfiVuNyewGZztzw6epZCMUlWXKURqy9adV0+L6Rjm6pkblslDhJt85gAAAMtJREFUGNNjYCARGOtqmDu6eKCIsRnFQIAfG0KQIwYBfGCCBjExeoY23DExgSHBMTHeUFHtmBhOfTugaHRETAy/P1RUB66dPygynJnV3QkkygkTjOLhDQPRDlZAUUWoIFdAKEyel4FBFspk9I3hY/KMYbG2iInhYWCQgih1i4nh83KNYbFkjIkxA5qhrAYUtXVGcnYMUFQpRks9xtQeSVCGgYFdXkFFVZPJBElUECgqDXG4HFyQGTmUWMUgguKoASrBISAsKiIkycAAAOu1Q38tWWImAAAAAElFTkSuQmCC");;
+}
+.qzone{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAD5UExURQAAAKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqkEjBioAAABSdFJOUwBVQ/lt7Jn8FDst9EY3Bih7IrGzaHqJNaFCXko+DgQcXHh/Px7XpViklK2vzadUNG69knn9M/E6iB3Uxo2jfGD33+KR6sHrlzDCfVOGsMXHS/KjLJ4jAAAAuklEQVQY03WOVQ7DQAwFXU45ZWZmZmamd//DNNsoSdWo87HrN7ItE0lwBgup8SOoljETkFDZEoDyr3SB0ZCzPapJ5asQsVb4QsYsWD1Lusnm7PXOhx0W0qw5CXStq9PN4yMaGAC9uEMrTj8sLrfw1aXVvTVwt9NFOK6vVS5Y7G1EV9Nru9R83TV1O45P3nfwjJsOxbYhUfvqbTGxY09OkXEdMHPSyChoTrYRFJ2fImtEWLYBm1yGzPSXNy2qI16C60XwAAAAAElFTkSuQmCC");
+}
+.fl-left{
+    float: left;
+}
+.fl-right{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input{
+    border: none;
+}
+/*@keyframes slideinfromright {*/
+    /*from {margin-left: 40px;opacity: 0.1;}*/
+    /*to {margin-left: 20px;opacity: 1;}*/
+/*}*/
+/*.slide-left li{*/
+    /*animation: slideinfromright 2s;*/
+    /*-webkit-animation:slideinfromright 2s ;*/
+/*}*/
